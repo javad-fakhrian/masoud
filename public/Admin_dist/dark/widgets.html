@@ -1,0 +1,1725 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from paradigm-shift.ir/Brego/brego/dark/widgets.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jul 2019 07:41:51 GMT -->
+<head>
+<title>Brego | Widgets</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content="Brego Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities.">
+<meta name="author" content="GetBootstrap, design by: puffintheme.com">
+
+<link rel="icon" href="favicon.html" type="image/x-icon">
+<!-- VENDOR CSS -->
+<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/vendor/animate-css/vivify.min.css">
+<link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../assets/vendor/c3/c3.min.css"/>
+<link rel="stylesheet" href="../assets/vendor/chartist/css/chartist.min.css">
+<link rel="stylesheet" href="../assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="../assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="assets/css/site.min.css">
+
+</head>
+<body class="theme-orange">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img src="../assets/images/icon.svg" width="40" height="40" alt="Brego"></div>
+       <p>لطفا صبر کنید...</p>         
+    </div>
+</div>
+
+<!-- Theme Setting -->
+<div class="themesetting">
+    <a href="javascript:void(0);" class="theme_btn"><i class="icon-magic-wand"></i></a>
+    <ul class="choose-skin list-unstyled mb-0">
+        <li data-theme="green"><div class="green"></div></li>
+        <li data-theme="orange" class="active"><div class="orange"></div></li>
+        <li data-theme="blush"><div class="blush"></div></li>
+        <li data-theme="cyan"><div class="cyan"></div></li>
+    </ul>
+</div>
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<div id="wrapper">
+
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <div class="navbar-left">
+                <div class="navbar-btn">
+                    <a href="index.html"><img src="../assets/images/icon.svg" alt="Brego Logo" class="img-fluid logo"></a>
+                    <button type="button" class="btn-toggle-offcanvas"><i class="lnr lnr-menu fa fa-bars"></i></button>
+                </div>
+                <form id="navbar-search" class="navbar-form search-form">
+                    <input value="" class="form-control" placeholder="جستجو در اینجا..." type="text">
+                    <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
+                </form>
+            </div>
+            
+            <div class="navbar-right">
+                <div id="navbar-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="page-social.html" class="social icon-menu" title="News">اجتماعی</a></li>
+                        <li><a href="page-news.html" class="news icon-menu" title="News">اخبار</a></li>
+                        <li><a href="javascript:void(0);" class="megamenu_toggle icon-menu" title="منوی مگا">مگا</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                <i class="icon-envelope"></i>
+                                <span class="notification-dot bg-green">4</span>
+                            </a>
+                            <ul class="dropdown-menu right_chat email vivify fadeIn">
+                                <li class="header green">شما 4 ایمیل جدید دارید</li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="avtar-pic w35 bg-red"><span>FC</span></div>
+                                            <div class="media-body">
+                                                <span class="name">آرش خادملو <small class="float-right">همین حالا</small></span>
+                                                <span class="message">به روز رسانی گیتهاب</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="avtar-pic w35 bg-indigo"><span>FC</span></div>
+                                            <div class="media-body">
+                                                <span class="name">آرش خادملو <small class="float-right">12 دقیقه پیش</small></span>
+                                                <span class="message">پیام جدید</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">آرش خادملو <small class="float-right">12 دقیقه پیش</small></span>
+                                                <span class="message">رفع اشکال طراحی</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media mb-0">
+                                            <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
+                                            <div class="media-body">
+                                                <span class="name">آرش خادملو <small class="float-right">2 ساعت پیش</small></span>
+                                                <span class="message">رفع اشکال</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                <i class="icon-bell"></i>
+                                <span class="notification-dot bg-azura">4</span>
+                            </a>
+                            <ul class="dropdown-menu feeds_widget vivify fadeIn">
+                                <li class="header blue">شما 4 اطلاعیه جدید دارید</li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="feeds-left bg-red"><i class="fa fa-check"></i></div>
+                                        <div class="feeds-body">
+                                            <h4 class="title text-danger">مشکل حل شده<small class="float-right text-muted">9:10 صبح</small></h4>
+                                            <small>ما همه اشکال طراحی با پاسخگو را رفع کرده ایم</small>
+                                        </div>
+                                    </a>
+                                </li>                               
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="feeds-left bg-info"><i class="fa fa-user"></i></div>
+                                        <div class="feeds-body">
+                                            <h4 class="title text-info">کاربر جدید <small class="float-right text-muted">9:15 صبح</small></h4>
+                                            <small>حس خوبی دارم توپ توپم! با تشکر از تیم</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="feeds-left bg-orange"><i class="fa fa-question-circle"></i></div>
+                                        <div class="feeds-body">
+                                            <h4 class="title text-warning">هشدار سرور <small class="float-right text-muted">9:10 صبح</small></h4>
+                                            <small>اتصال شما خصوصی نیست</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="feeds-left bg-green"><i class="fa fa-thumbs-o-up"></i></div>
+                                        <div class="feeds-body">
+                                            <h4 class="title text-success">2 بازخورد جدید <small class="float-right text-muted">9:10 صبح</small></h4>
+                                            <small>این یک پایان هوشمند برای سایت شما خواهد بود</small>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="icon-bubbles"></i></a></li>
+                        <li><a href="page-login.html" class="icon-menu"><i class="icon-power"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="megamenu" class="megamenu particles_js">
+        <a href="javascript:void(0);" class="megamenu_toggle btn btn-danger"><i class="icon-close"></i></a>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="mega-card">
+                        <h6 class="title">تنظیمات عمومی</h6>
+                        <ul class="setting-list list-unstyled mb-0">
+                            <li>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>هرکسی مرا دنبال کند</span>
+                            </li>
+                            <li>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>ایمیل تغییر مسیر</span>
+                            </li>
+                            <li>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>اطلاعیه</span>
+                            </li>
+                            <li>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>به روز رسانی خودکار</span>
+                            </li>
+                            <li>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>آفلاین</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="mega-card">
+                         <h6 class="title">لینک سریع</h6>
+                        <ul class="guick_link">
+                            <li><a href="#" title="">خانه</a></li>
+                            <li><a href="#" title="">درباره ما</a></li>
+                            <li><a href="#" title="">سوالات متداول</a></li>
+                            <li><a href="#" title="">حریم خصوصی</a></li>
+                            <li><a href="#" title="">نقشه سایت</a></li>
+                            <li><a href="#" title="">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="mega-card">
+                        <h6 class="title">تماس با ما</h6>
+                        <form>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" placeholder="نام را وارد کنید">
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" placeholder="ایمیل را وارد کنید">
+                            </div>
+                            <div class="input-group mb-2">
+                                <textarea  class="form-control" placeholder="پیام" rows="2"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-round">تایید</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="mega-card">
+                        <h6 class="title">گالری تصویر</h6>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="../assets/images/image-gallery/7.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../assets/images/image-gallery/8.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../assets/images/image-gallery/9.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">قبلی</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">بعدی</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="card mt-4">
+                    <div class="header">
+                        <h2>سوالات متداول</h2>
+                        <ul class="header-dropdown dropdown">                                
+                            <li><a href="javascript:void(0);" class="full-screen"><i class="icon-frame"></i></a></li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0);">اقدام</a></li>
+                                    <li><a href="javascript:void(0);">دیگر اقدام</a></li>
+                                    <li><a href="javascript:void(0);">یک چیز دیگر</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="accordion" id="accordion-faqs">
+                            <div>
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne-faqs" aria-expanded="true" aria-controls="collapseOne">
+                                        س: نحوه استفاده از متغیرهای SCSS برای ساخت رنگ سفارشی <span class="float-right badge  badge-primary">23</span>
+                                        </button>
+                                    </h5>
+                                </div>                                
+                                <div id="collapseOne-faqs" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-faqs">
+                                    <div class="card-body">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo-faqs" aria-expanded="false" aria-controls="collapseTwo">
+                                        س: چهار سؤال درباره استراتژی DevOps شما چیست؟ <span class="float-right badge  badge-success">8</span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo-faqs" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faqs">
+                                    <div class="card-body">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree-faqs" aria-expanded="false" aria-controls="collapseThree">
+                                    س: مقایسه مایکروسافت و مفاهیم برنامه نویسی کاربردی <span class="float-right badge  badge-danger">13</span>
+                                    </button>
+                                </h5>
+                                </div>
+                                <div id="collapseThree-faqs" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faqs">
+                                    <div class="card-body">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+
+    <div id="rightbar" class="rightbar">
+        <div class="slim_scroll">
+            <div class="chat_detail vivify fadeIn delay-100">
+                <a href="javascript:void(0);" class="btn btn-sm btn-block btn-primary btn-round mb-4 back_btn" title=""><i class="icon-control-rewind mr-1"></i> Back</a>
+                <ul class="chat-widget clearfix">
+                    <li class="left float-left">
+                        <div class="avtar-pic w35 bg-pink"><span>KG</span></div>
+                        <div class="chat-info">       
+                            <span class="message">سلام، آرش<br>به روز رسانی در پروژه X چیست؟</span>
+                        </div>
+                    </li>
+                    <li class="right">
+                        <img src="../assets/images/xs/avatar1.jpg" class="rounded" alt="">
+                        <div class="chat-info">
+                            <span class="message">سلام، آرش<br>به روز رسانی در پروژه X چیست؟</span>
+                        </div>
+                    </li>
+                    <li class="left float-left">
+                        <div class="avtar-pic w35 bg-pink"><span>KG</span></div>
+                        <div class="chat-info">
+                            <span class="message">سلام، آرش<br>به روز رسانی در پروژه X چیست؟</span>
+                        </div>
+                    </li>
+                    <li class="right">
+                        <img src="../assets/images/xs/avatar1.jpg" class="rounded" alt="">
+                        <div class="chat-info">
+                            <span class="message">سلام، آرش<br>به روز رسانی در پروژه X چیست؟</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="input-group p-t-15">
+                    <textarea  rows="3" class="form-control" placeholder="متن را اینجا وارد کنید..."></textarea>
+                </div>
+            </div>
+            <div class="chat_list">
+                <form>
+                    <div class="input-group m-b-20">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                        </div>
+                       <input type="text" class="form-control" placeholder="جستجو...">
+                    </div>
+                </form>
+                <ul class="right_chat list-unstyled mb-0">
+                    <li class="online">
+                        <a href="javascript:void(0);">
+                            <div class="media">
+                                <div class="avtar-pic w35 bg-pink"><span>KG</span></div>
+                                <div class="media-body">
+                                    <span class="name">آرش خادملو</span>
+                                    <span class="message">همین حالا</span>
+                                    <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </a>                            
+                    </li>
+                    <li class="online">
+                        <a href="javascript:void(0);">
+                            <div class="media">
+                                <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">آرش خادملو</span>
+                                    <span class="message">12 دقیقه پیش</span>
+                                    <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </a>                            
+                    </li>
+                    <li class="offline">
+                        <a href="javascript:void(0);">
+                            <div class="media">
+                                <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">آرش خادملو</span>
+                                    <span class="message">2 ساعت پیش</span>
+                                    <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </a>                            
+                    </li>
+                    <li class="offline">
+                        <a href="javascript:void(0);">
+                            <div class="media">
+                                <div class="avtar-pic w35 bg-indigo"><span>FC</span></div>
+                                <div class="media-body">
+                                    <span class="name">آرش خادملو</span>
+                                    <span class="message">2 ساعت پیش</span>
+                                    <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </a>                            
+                    </li>
+                    <li class="online">
+                        <a href="javascript:void(0);">
+                            <div class="media">
+                                <img class="media-object " src="../assets/images/xs/avatar3.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">آرش خادملو</span>
+                                    <span class="message">1 روز پیش</span>
+                                    <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </a>                            
+                    </li>
+                    <li class="online">
+                        <a href="javascript:void(0);">
+                            <div class="media">
+                                <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">آرش خادملو</span>
+                                    <span class="message">12 دقیقه پیش</span>
+                                    <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </a>                            
+                    </li>
+                    <li class="offline">
+                        <a href="javascript:void(0);">
+                            <div class="media">
+                                <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">آرش خادملو</span>
+                                    <span class="message">2 ساعت پیش</span>
+                                    <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </a>                            
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="left-sidebar" class="sidebar">
+        <div class="navbar-brand">
+            <a href="index.html"><img src="../assets/images/icon.svg" alt="Brego Logo" class="img-fluid logo"><span>برگو</span></a>
+            <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="lnr lnr-menu fa fa-chevron-circle-left"></i></button>
+        </div>
+        <div class="sidebar-scroll">
+            <div class="user-account">
+                <div class="user_div">
+                    <img src="../assets/images/user.png" class="user-photo" alt="User Profile Picture">
+                </div>
+                <div class="dropdown">
+                    <span>خوش آمديد،</span>
+                    <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>آرش خادملو</strong></a>
+                    <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
+                        <li><a href="page-profile.html"><i class="icon-user"></i>پروفایل من</a></li>
+                        <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>پیام</a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-settings"></i>تنظیمات</a></li>
+                        <li class="divider"></li>
+                        <li><a href="page-login.html"><i class="icon-power"></i>خروج</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-sm btn-block btn-primary btn-round mt-3" title=""><i class="icon-plus mr-1"></i> ایجاد جدید</a>
+            </div>  
+            <nav id="left-sidebar-nav" class="sidebar-nav">
+                <ul id="main-menu" class="metismenu">
+                    <li class="header">اصلی</li>
+                    <li>
+                        <a href="#Dashboard" class="has-arrow"><i class="icon-speedometer"></i><span>داشبورد</span></a>
+                        <ul>
+                            <li><a href="index.html">نسخه تاریک</a></li>
+                            <li><a href="../light/index.html">نسخه روشن</a></li>
+                            <li><a href="../fluid/index.html">نسخه سیالات</a></li>
+                            <li><a href="../hmenu/index.html">نسخه منوی افقی</a></li>
+                            <li><a href="../landing/index.html">صفحه لندینگ</a></li>
+                        </ul>
+                    </li>
+                    <li class="header">برنامه</li>
+                    <li><a href="app-inbox.html"><i class="icon-envelope"></i> <span>ایمیل</span> <span class="badge badge-default float-right mr-0">12</span></a></li>
+                    <li><a href="app-chat.html"><i class="icon-bubbles"></i> <span>چت</span></a></li>
+                    <li><a href="app-calendar.html"><i class="icon-calendar"></i> <span>تقویم</span></a></li>
+                    <li class="header">عناصر رابط کاربری</li>
+                    <li>
+                        <a href="#uiElements" class="has-arrow"><i class="icon-diamond"></i><span>کامپونت ها</span></a>
+                        <ul>
+                            <li><a href="ui-helper-class.html">کلاس های کمکی</a></li>
+                            <li><a href="ui-bootstrap.html">رابط کاربری بوت استرپ</a></li>
+                            <li><a href="ui-typography.html">تایپوگرافی</a></li>
+                            <li><a href="ui-tabs.html">زبانه ها</a></li>
+                            <li><a href="ui-buttons.html">دکمه ها</a></li>                            
+                            <li><a href="ui-icons.html">آیکون ها</a></li>
+                            <li><a href="ui-notifications.html">اطلاعیه</a></li>
+                            <li><a href="ui-colors.html">رنگ</a></li>
+                            <li><a href="ui-dialogs.html">دیالوگ ها</a></li>                                    
+                            <li><a href="ui-list-group.html">گروه فهرست</a></li>
+                            <li><a href="ui-media-object.html">شی رسانه</a></li>
+                            <li><a href="ui-modals.html">مودال ها</a></li>
+                            <li><a href="ui-nestable.html">تو در تو</a></li>
+                            <li><a href="ui-progressbars.html">نوارهای پیشرفت</a></li>
+                            <li><a href="ui-range-sliders.html">اسلایدرهای محدوده</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#forms" class="has-arrow"><i class="icon-pencil"></i><span>فرم ها</span></a>
+                        <ul>
+                            <li><a href="forms-basic.html">عناصر پایه</a></li>
+                            <li><a href="forms-advanced.html">عناصر پیشرفته</a></li>
+                            <li><a href="forms-validation.html">اعتبار سنجی فرم</a></li>
+                            <li><a href="forms-wizard.html">فرم پیشرفته</a></li>
+                            <li><a href="forms-dragdropupload.html">آپلود با کشیدن و رها کردن</a></li>
+                            <li><a href="forms-cropping.html">برش تصویر</a></li>
+                            <li><a href="forms-summernote.html">سامر نوت</a></li>
+                            <li><a href="forms-editors.html">ویرایشگر CK</a></li>
+                            <li><a href="forms-markdown.html">نشانه گذاری</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Tables" class="has-arrow"><i class="icon-layers"></i><span>جداول</span></a>
+                        <ul>
+                            <li><a href="table-normal.html">جداول معمولی</a></li>
+                            <li><a href="table-jquery-datatable.html">پایگاه داده جی کوئری</a></li>
+                            <li><a href="table-editable.html">جداول قابل ویرایش</a></li>
+                            <li><a href="table-color.html">رنگ جداول</a></li>
+                            <li><a href="table-filter.html">فیلتر جدول</a></li>
+                            <li><a href="table-dragger.html">جدول کشیدن</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#charts" class="has-arrow"><i class="icon-pie-chart"></i><span>نمودارها</span></a>
+                        <ul>
+                            <li><a href="chart-c3.html">نمودارهای C3</a></li>
+                            <li><a href="chart-morris.html">موریس</a></li>
+                            <li><a href="chart-flot.html">فلوت</a></li>
+                            <li><a href="chart-chartjs.html">ChartJS</a></li>
+                            <li><a href="chart-jquery-knob.html">جی کوئری Knoob</a></li>                            
+                            <li><a href="chart-sparkline.html">نمودار اسپارک لاین</a></li>
+                        </ul>
+                    </li>
+                    <li class="header">بیشتر</li>
+                    <li class="active"><a href="widgets.html"><i class="icon-puzzle"></i><span>ابزارک ها</span></a></li>
+                    <li>
+                        <a href="#Pages" class="has-arrow"><i class="icon-docs"></i><span>صفحات</span></a>
+                        <ul>
+                            <li><a href="page-login.html">ورود</a></li>
+                            <li><a href="page-register.html">ثبت نام</a></li>
+                            <li><a href="page-forgot-password.html">فراموشی رمزعبور</a></li>
+                            <li><a href="page-404.html">صفحه 404</a></li>
+                            <li><a href="page-blank.html">صفحه خالی</a></li>
+                            <li><a href="page-search-results.html">نتایج جستجو</a></li>
+                            <li><a href="page-profile.html">پروفایل </a></li>
+                            <li><a href="page-invoices.html">فاکتورها </a></li>
+                            <li><a href="page-gallery.html">گالری تصویر </a></li>
+                            <li><a href="page-timeline.html">خط زمانی</a></li>
+                            <li><a href="page-pricing.html">قیمت گذاری</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Maps" class="has-arrow"><i class="icon-map"></i><span>نقشه ها</span></a>
+                        <ul>
+                            
+                            <li><a href="map-jvectormap.html">نقشه jVector</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>     
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="block-header">
+            <div class="row clearfix">
+                <div class="col-md-6 col-sm-12">
+                    <h2>ابزارک ها</h2>
+                </div>            
+                <div class="col-md-6 col-sm-12 text-right">
+                    <div class="inlineblock vivify swoopInTop delay-900 mr-4">بازدیدکنندگان <span id="mini-bar-chart1" class="mini-bar-chart"></span></div>
+                    <div class="inlineblock vivify swoopInTop delay-950 mr-4">بازدیدها <span id="mini-bar-chart2" class="mini-bar-chart"></span></div>
+                    <div class="inlineblock vivify swoopInTop delay-1000">چت ها <span id="mini-bar-chart3" class="mini-bar-chart"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-indigo text-white rounded-circle"><i class="fa fa-briefcase"></i></div>
+                                <div class="ml-4">
+                                    <span>درآمد کلی</span>
+                                    <h4 class="mb-0 font-weight-medium">7805تومان</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-azura text-white rounded-circle"><i class="fa fa-credit-card"></i></div>
+                                <div class="ml-4">
+                                    <span>هزینه جدید</span>
+                                    <h4 class="mb-0 font-weight-medium">7805تومان</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-orange text-white rounded-circle"><i class="fa fa-users"></i></div>
+                                <div class="ml-4">
+                                    <span>بازدید روزانه</span>
+                                    <h4 class="mb-0 font-weight-medium">5,805</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-pink text-white rounded-circle"><i class="fa fa-life-ring"></i></div>
+                                <div class="ml-4">
+                                    <span>نرخ بیکاری</span>
+                                    <h4 class="mb-0 font-weight-medium">7805تومان</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <a class="card" href="javascript:void(0)">
+                        <div class="body text-center">
+                            <img class="img-thumbnail rounded-circle" src="../assets/images/sm/avatar1.jpg" alt="">
+                            <h6 class="mt-3">آرش خادملو</h6>
+                            <div class="text-center text-muted">توسعه دهنده اینترانت</div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <i class="fa fa-tag font-22"></i>
+                                    <div><span class="text-muted">9 نشان</span></div>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fa fa-dollar font-22"></i>
+                                    <div><span class="text-muted">3100 تومان</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="card" href="javascript:void(0)">
+                        <div class="body text-center">
+                            <img class="img-thumbnail rounded-circle" src="../assets/images/sm/avatar2.jpg" alt="">
+                            <h6 class="mt-3">آرش خادملو</h6>
+                            <div class="text-center text-muted">توسعه دهنده آنگولار</div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <i class="fa fa-envelope font-22"></i>
+                                    <div><span class="text-muted">9 ایمیل</span></div>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fa fa-bug font-22"></i>
+                                    <div><span class="text-muted">10 اشکال</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="card" href="javascript:void(0)">
+                        <div class="body text-center">
+                            <img class="img-thumbnail rounded-circle" src="../assets/images/sm/avatar3.jpg" alt="">
+                            <h6 class="mt-3">آرش خادملو</h6>
+                            <div class="text-center text-muted">مدیریت پروژه</div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <i class="fa fa-briefcase font-22"></i>
+                                    <div><span class="text-muted">9 پروژه</span></div>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fa fa-dollar font-22"></i>
+                                    <div><span class="text-muted">3100 تومان</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="card" href="javascript:void(0)">
+                        <div class="body text-center">
+                            <img class="img-thumbnail rounded-circle" src="../assets/images/sm/avatar4.jpg" alt="">
+                            <h6 class="mt-3">آرش خادملو</h6>
+                            <div class="text-center text-muted">توسعه دهنده اینترانت</div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <i class="fa fa-camera font-22"></i>
+                                    <div><span class="text-muted">17 عکس</span></div>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fa fa-trophy font-22"></i>
+                                    <div><span class="text-muted">7 جایزه</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="header">
+                            <h2>کاربران</h2>
+                        </div>
+                        <div class="body">                            
+                            <div id="chart-bar-stacked" style="height: 200px"></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <h6>350</h6>
+                                    <span>کاربر</span>
+                                </div>
+                                <div class="col-6">
+                                    <h6>87</h6>
+                                    <span>ویژه</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="header">
+                            <h2>بازاریابی </h2>
+                        </div>
+                        <div class="body">
+                            <div id="chart-area-spline-sracked" style="height: 200px"></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <h6>3095تومان</h6>
+                                    <span>ماه گذشته</span>
+                                </div>
+                                <div class="col-6">
+                                    <h6>3095تومان</h6>
+                                    <span>این ماه</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="card">
+                        <div class="header">
+                            <h2>محصولات برتر</h2>
+                        </div>
+                        <div class="body">
+                            <div id="stackedbar-chart" class="ct-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-md-6">
+                    <div class="card">
+                        <article class="media body mb-0">
+                            <div class="mr-3">
+                                <img class="rounded mr-3" src="../assets/images/xs/avatar4.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <div class="content">
+                                <p class="h5">آرش خادملو <small>@johnsmith</small> <small class="float-right text-muted">331 دقیقه پیش</small></p>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون.</p>
+                                </div>
+                                <nav class="d-flex text-muted">
+                                    <a href="javascript:void(0);" class="icon mr-3"><i class="fa fa-repeat"></i></a>
+                                    <a href="javascript:void(0);" class="icon mr-3"><i class="fa fa-twitter"></i> 24</a>
+                                    <a href="javascript:void(0);" class="icon mr-3"><i class="fa fa-heart"></i> 43</a>
+                                    <a href="javascript:void(0);" class="text-muted ml-auto">5 یادداشت</a>
+                                </nav>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <article class="media body mb-0">
+                            <div class="mr-3">
+                                <img class="rounded mr-3" src="../assets/images/xs/avatar4.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <div class="content">
+                                <p class="h5">آرش خادملو <small>@johnsmith</small> <small class="float-right text-muted">331 دقیقه پیش</small></p>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون.</p>
+                                </div>
+                                <nav class="d-flex text-muted">
+                                    <a href="javascript:void(0);" class="icon mr-3"><i class="fa fa-repeat"></i></a>
+                                    <a href="javascript:void(0);" class="icon mr-3"><i class="fa fa-twitter"></i> 24</a>
+                                    <a href="javascript:void(0);" class="icon mr-3"><i class="fa fa-heart"></i> 43</a>
+                                    <a href="javascript:void(0);" class="text-muted ml-auto">5 یادداشت</a>
+                                </nav>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="body small_state">
+                            <div class="details">
+                                <span class="mb-0">جمعیت</span>
+                                <h5 class="mb-0">614</h5>
+                            </div>
+                            <div class="state_chart">
+                                <span class="chart_1">5,2,3,6,9,8,4,1,2,8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="body small_state">
+                            <div class="details">
+                                <span class="mb-0">بازدید صفحه</span>
+                                <h5 class="mb-0">3,025</h5>
+                            </div>
+                            <div class="state_chart">
+                                <span class="chart_3">2,5,8,3,6,9,4,5,6,3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="body small_state">
+                            <div class="details">
+                                <span class="mb-0">رشد</span>
+                                <h5 class="mb-0">35 میلیون</h5>
+                            </div>
+                            <div class="state_chart">
+                                <span class="chart_4">4:4, 5:1, 3:5, 8:3, 5:10, 6:10, 8:2, 5:3, 2:3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="body small_state">
+                            <div class="details">
+                                <span class="mb-0">استفاده</span>
+                                <h5 class="mb-0">98%</h5>
+                            </div>
+                            <div class="state_chart">
+                                <span class="chart_2">9,5,1,3,5,7,8,5,2,4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body w_knob">
+                            <div class="c_know">
+                                <input type="text" class="knob" value="22" data-width="50" data-height="50" data-thickness="0.07" data-bgColor="#383b40" data-fgColor="#49c5b6">
+                            </div>
+                            <div>
+                                <h6>رویداد</h6>
+                                <span>12 از این ماه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body w_knob">
+                            <div class="c_know">
+                                <input type="text" class="knob" value="78" data-width="50" data-height="50" data-thickness="0.07" data-bgColor="#383b40" data-fgColor="#2196f3">
+                            </div>                            
+                            <div>
+                                <h6>روز تولد</h6>
+                                <span>12 از این ماه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body w_knob">
+                            <div class="c_know">
+                                <input type="text" class="knob" value="66" data-width="50" data-height="50" data-thickness="0.07" data-bgColor="#383b40" data-fgColor="#f44336">
+                            </div>                            
+                            <div>
+                                <h6>کنفرانس</h6>
+                                <span>12 از این ماه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body w_knob">
+                            <div class="c_know">
+                                <input type="text" class="knob" value="50" data-width="50" data-height="50" data-thickness="0.07" data-bgColor="#383b40" data-fgColor="#4caf50">
+                            </div>
+                            <div>
+                                <h6>سمینار</h6>
+                                <span>12 از این ماه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>کاربران</h2>
+                        </div>
+                        <div class="body">
+                            <div class="row text-center">
+                                <div class="col-6 border-right pb-4 pt-4">
+                                    <label class="mb-0">کاربر جدید</label>
+                                    <h4 class="font-30 font-weight-bold text-col-blue">2,025</h4>
+                                </div>
+                                <div class="col-6 pb-4 pt-4">
+                                    <label class="mb-0">بازگشت بازدید کنندگان</label>
+                                    <h4 class="font-30 font-weight-bold text-col-blue">1,254</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="form-group">
+                                <label class="d-block">کاربر جدید <span class="float-right">77%</span></label>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block">بازگشت بازدید کنندگان <span class="float-right">50%</span></label>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block">مشارکت <span class="float-right">23%</span></label>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width: 23%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="card user_statistics">
+                        <div class="header">
+                            <h2>گزارش درآمد</h2>
+                        </div>
+                        <div class="body">                            
+                            <div id="chart-bar" style="height: 302px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card w_card3">
+                        <div class="body">
+                            <div class="text-center"><i class="icon-picture text-info"></i>
+                                <h4 class="m-t-25 mb-0">104 عکس</h4>
+                                <p>دانلود گالری شما کامل شده است</p>
+                                <a href="javascript:void(0);" class="btn btn-info btn-round">دانلود حالا</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card w_card3">
+                        <div class="body">
+                            <div class="text-center"><i class="icon-diamond text-success"></i>
+                                <h4 class="m-t-25 mb-0">813 امتیاز</h4>
+                                <p>شما کار خوبی انجام می دهید!</p>
+                                <a href="javascript:void(0);" class="btn btn-success btn-round">حالا بخوان</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card w_card3">
+                        <div class="body">
+                            <div class="text-center"><i class="icon-social-twitter text-primary"></i>
+                                <h4 class="m-t-25 mb-0">3,756</h4>
+                                <p>دنبال کنندگان جدید در توییتر</p>
+                                <a href="javascript:void(0);" class="btn btn-primary btn-round">بیشتر پیدا کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body top_counter">
+                            <div class="icon bg-warning text-white"><i class="fa fa-building"></i> </div>
+                            <div class="content">
+                                <span>خواص</span>
+                                <h5 class="number mb-0">53,251</h5>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body top_counter">
+                            <div class="icon bg-success text-white"><i class="fa fa-area-chart"></i> </div>
+                            <div class="content">
+                                <span>رشد</span>
+                                <h5 class="number mb-0">62%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body top_counter">
+                            <div class="icon bg-info text-white"><i class="fa fa-shopping-cart"></i> </div>
+                            <div class="content">
+                                <span>مجموع فروش</span>
+                                <h5 class="number mb-0">3205تومان</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body top_counter">
+                            <div class="icon bg-danger text-white"><i class="fa fa-tag"></i> </div>
+                            <div class="content">
+                                <span>اجاره شده</span>
+                                <h5 class="number mb-0">3,217</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>خلاصه</h2>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="w_summary">
+                                        <div class="s_chart">
+                                            <span class="chart">5,2,3,6,9,8,4,1,2,8</span>
+                                        </div>
+                                        <div class="s_detail">
+                                            <h2 class="font700 mb-0">15هزار</h2>
+                                            <span>67% <i class="fa fa-level-up text-success"></i> درآمد کلی</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="w_summary">
+                                        <div class="s_chart">
+                                            <span class="chart">6,3,2,5,8,9,5,4,2,3</span>
+                                        </div>
+                                        <div class="s_detail">
+                                            <h2 class="font700 mb-0">15هزار</h2>
+                                            <span>15% <i class="fa fa-level-up text-success"></i> مجموع هزینه</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="w_summary">
+                                        <div class="s_chart">
+                                            <span class="chart">3,5,1,6,2,4,8,5,3,2</span>
+                                        </div>
+                                        <div class="s_detail">
+                                            <h2 class="font700 mb-0">15هزار</h2>
+                                            <span>23% <i class="fa fa-level-up text-success"></i> مجموع هزینه</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="w_summary">
+                                        <div class="s_chart">
+                                            <span class="chart">8,5,2,9,6,3,4,5,6,7</span>
+                                        </div>
+                                        <div class="s_detail">
+                                            <h2 class="font700 mb-0">15هزار</h2>
+                                            <span>52% <i class="fa fa-level-up text-success"></i> مجموع هزینه</span>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-7">
+                                    <h5 class="mb-0">سرور</h5>
+                                    <small class="info">از 1ترابایت</small>
+                                </div>
+                                <div class="col-5 text-right">
+                                    <h2 class="m-b-0">62%</h2>
+                                </div>
+                                <div class="col-12">                                    
+                                    <div class="progress progress-xxs progress-transparent custom-color-blue mb-0 mt-3">
+                                        <div class="progress-bar" data-transitiongoal="87"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-7">
+                                    <h5 class="mb-0">ایمیل</h5>
+                                    <small class="info">از 31</small>
+                                </div>
+                                <div class="col-5 text-right">
+                                    <h2 class="m-b-0">62%</h2>
+                                </div>
+                                <div class="col-12">                                    
+                                    <div class="progress progress-xxs progress-transparent custom-color-yellow mb-0 mt-3">
+                                        <div class="progress-bar" data-transitiongoal="54"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-7">
+                                    <h5 class="mb-0">دامنه</h5>
+                                    <small class="info">از 10</small>
+                                </div>
+                                <div class="col-5 text-right">
+                                    <h2 class="m-b-0">2</h2>
+                                </div>
+                                <div class="col-12">                                    
+                                    <div class="progress progress-xxs progress-transparent custom-color-green mb-0 mt-3">
+                                        <div class="progress-bar" data-transitiongoal="67"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="body">
+                            <div class="card-value float-right text-blue">+5%</div>
+                            <h4 class="mb-1">423</h4>
+                            <div class="text-muted">ترافیک پرداخت شده</div>
+                        </div>
+                        <div class="card-chart-bg">
+                            <div id="chart-bg-users-1" style="height: 60px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="body">
+                            <div class="card-value float-right text-red">-3%</div>
+                            <h4 class="mb-1">423</h4>
+                            <div class="text-muted">ترافیک پرداخت شده</div>
+                        </div>
+                        <div class="card-chart-bg">
+                            <div id="chart-bg-users-2" style="height: 60px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="body">
+                            <div class="card-value float-right text-green">-3%</div>
+                            <h4 class="mb-1">423</h4>
+                            <div class="text-muted">بازدید روزانه</div>
+                        </div>
+                        <div class="card-chart-bg">
+                            <div id="chart-bg-users-3" style="height: 60px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="body">
+                            <div class="card-value float-right text-yellow">9%</div>
+                            <h4 class="mb-1">423</h4>
+                            <div class="text-muted">ترافیک پرداخت شده</div>
+                        </div>
+                        <div class="card-chart-bg">
+                            <div id="chart-bg-users-4" style="height: 60px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="body p-4">
+                            <div class="row clearfix">
+                                <div class="col-auto">
+                                    <div class="stamp stamp-md bg-warning">
+                                        <i class="fa fa-database"></i>
+                                    </div>
+                                </div>
+                                <div class="col text-right">
+                                    <div class="small text-muted">ظرفیت</div>
+                                    <div class="h4 m-0">105گیگ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card ">
+                        <div class="body p-4">
+                            <div class="row clearfix">
+                                <div class="col-auto">
+                                    <div class="stamp stamp-md bg-success">
+                                        <i class="fa fa-institution"></i>
+                                    </div>
+                                </div>
+                                <div class="col text-right">
+                                    <div class="small text-muted">درآمد</div>
+                                    <div class="h4 m-0">1345تومان</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="body p-4">
+                            <div class="row clearfix">
+                                <div class="col-auto">
+                                    <div class="stamp stamp-md bg-danger">
+                                        <i class="fa fa-bug"></i>
+                                    </div>
+                                </div>
+                                <div class="col text-right">
+                                    <div class="small text-muted">اشکال</div>
+                                    <div class="h4 m-0">24</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card ">
+                        <div class="body p-4">
+                            <div class="row clearfix">
+                                <div class="col-auto">
+                                    <div class="stamp stamp-md bg-info">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                </div>
+                                <div class="col text-right">
+                                    <div class="small text-muted">دنبال کنندگان</div>
+                                    <div class="h4 m-0">10K</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div>مجموع درآمد</div>
+                            <div class="py-4 m-0 text-center h1 text-success">9452تومان</div>
+                            <div class="d-flex">
+                                <small class="text-muted">درآمد</small>
+                                <div class="ml-auto"><i class="fa fa-caret-up text-success"></i>4%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div>وضعیت درآمد</div>
+                            <div class="py-4 m-0 text-center h1 text-info">$2,258</div>
+                            <div class="d-flex">
+                                <small class="text-muted">درآمد جدید</small>
+                                <div class="ml-auto">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div>وضعیت مشتری</div>
+                            <div class="py-4 m-0 text-center h1 text-warning">232</div>
+                            <div class="d-flex">
+                                <small class="text-muted">کاربر جدید</small>
+                                <div class="ml-auto"><i class="fa fa-caret-up text-success"></i>3%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div>وضعیت سفارش</div>
+                            <div class="py-4 m-0 text-center h1 text-danger">428</div>
+                            <div class="d-flex">
+                                <small class="text-muted">سفارش جدید</small>
+                                <div class="ml-auto"><i class="fa fa-caret-down text-danger"></i>10%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-12">                    
+                    <div class="card">
+                        <div class="body">
+                            <div class="card-value float-right text-warning"><i class="wi wi-day-cloudy"></i></div>
+                            <h3 class="mb-1">18°C</h3>
+                            <div>نیویورک، امریکا</div>
+                        </div>
+                    </div>                    
+                    <div class="card">
+                        <div class="body">
+                            <div class="media">
+                                <img class="rounded mr-3" src="../assets/images/xs/avatar7.jpg" alt="">
+                                <div class="media-body">
+                                    <h5 class="m-0">آرش خادملو</h5>
+                                    <p class="text-muted mb-0">طراح موبایل</p>
+                                </div>
+                            </div>
+                            <table class="table card-table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="font-weight-bold">اپل</td>
+                                        <td class="text-right">984.52 <span class="text-success">(0.25%) <i class="fa fa-caret-up"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">گوگل</td>
+                                        <td class="text-right">956.3 <span class="text-danger">(-0.15%) <i class="fa fa-caret-down"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">دی ام کی</td>
+                                        <td class="text-right">89.74 <span class="text-success">(0.85%) <i class="fa fa-caret-up"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">تی سی اس</td>
+                                        <td class="text-right">48.75 <span class="text-danger">(-0.63%) <i class="fa fa-caret-down"></i></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="slider4" class="carousel slide" data-ride="carousel" data-interval="2000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="card-img-top" src="../assets/images/image-gallery/10.jpg" alt="Card image cap">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="../assets/images/image-gallery/11.jpg" alt="Card image cap">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="card-img-top" src="../assets/images/image-gallery/12.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row clearfix">
+                                <div class="col-6">
+                                    <i class="fa fa-camera font-22"></i>
+                                    <div><span class="text-muted">3 عکس</span></div>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fa fa-eye font-22"></i>
+                                    <div><span class="text-muted">هزار مشاهده</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <h2>دسامبر 2018</h2>
+                        </div>
+                        <div class="body">
+                            <table class="table table-calendar mb-3">
+                                <tbody>
+                                    <tr>
+                                        <th>دو</th>
+                                        <th>سه</th>
+                                        <th>چه</th>
+                                        <th>پن</th>
+                                        <th>جم</th>
+                                        <th>شن</th>
+                                        <th>یک</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">27</td>
+                                        <td class="text-muted">28</td>
+                                        <td class="text-muted">29</td>
+                                        <td class="text-muted">30</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)" class="table-calendar-link">4</a></td>
+                                        <td>5</td>
+                                        <td><a href="javascript:void(0)" class="table-calendar-link">6</a></td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td><a href="javascript:void(0)" class="table-calendar-link">12</a></td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td><a href="javascript:void(0)">15</a></td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td><a href="javascript:void(0)" class="table-calendar-link">19</a></td>
+                                        <td><a href="javascript:void(0)" class="table-calendar-link">20</a></td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td class="text-muted">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/images/image-gallery/1.jpg" alt="Card image cap">
+                        <div class="body">
+                            <h4 class="card-title">عنوان کارت</h4>
+                            <div class="card-subtitle">لورم ایپسوم متن ساختگی با تولید.</div>
+                            <p class="card-text">بعضی از نمونه های سریع نمونه ای که بر روی عنوان کارت ساخته می شوند و بخش عمده ای از محتوای کارت را تشکیل می دهند.</p>
+                            <a href="javascript:void(0)" class="btn btn-primary">برو جایی</a>
+                        </div>
+                    </div>
+                    <div class="card bg-success">
+                        <div class="body text-white">
+                            <div class="card-value float-right">58%</div>
+                            <h3 class="mb-1">6251</h3>
+                            <div>سفارش جدید</div>
+                        </div>
+                    </div>
+                    <form class="card" action="#" method="post">
+                        <div class="header">
+                            <h2>وارد حساب کاربری خود شوید</h2>
+                        </div>
+                        <div class="body">
+                            <div class="form-group">
+                                <label class="form-label">آدرس ایمیل</label>
+                                <input type="email" class="form-control round" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ایمیل را وارد کنید">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label displayblock">رمزعبور<a href="javascript:void(0);" class="float-right small">رمز عبور را فراموش کرده ام</a></label>
+                                <input type="password" class="form-control round" id="exampleInputPassword1" placeholder="رمزعبور">
+                            </div>
+                            <div class="form-group">
+                                <div class="fancy-checkbox">
+                                    <label><input type="checkbox"><span>مرا به خاطر بسپار</span></label>
+                                </div>
+                            </div>
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn-primary btn-block">ورود</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="card border-danger">
+                        <div class="body text-danger">
+                            <h4 class="card-title">عنوان کارت تهدید</h4>
+                            <p class="card-text">بعضی از نمونه های سریع نمونه ای که بر روی عنوان کارت ساخته می شوند و بخش عمده ای از محتوای کارت را تشکیل می دهند.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="media mb-0">
+                                <img class="rounded mr-3" src="../assets/images/xs/avatar4.jpg" alt="">
+                                <div class="media-body">
+                                    <h5 class="m-0">آرش خادملو</h5>
+                                    <p class="text-muted mb-0">Webdeveloper</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <h2>پارامترهای سرور</h2>
+                        </div>
+                        <div class="body">
+                            <div class="card-text">
+                                <div class="mt-0">
+                                    <small class="float-right text-muted">10/200 GB</small>
+                                    <span>Memory</span>
+                                    <div class="progress progress-xxs">
+                                        <div style="width: 60%;" class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <small class="float-right text-muted">20 GB</small>
+                                    <span>Bandwidth</span>
+                                    <div class="progress progress-xxs">
+                                        <div style="width: 50%;" class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <small class="float-right text-muted">73%</small>
+                                    <span>Activity</span>
+                                    <div class="progress progress-xxs">
+                                        <div style="width: 40%;" class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <small class="float-right text-muted">400 GB</small>
+                                    <span>FTP</span>
+                                    <div class="progress progress-xxs">
+                                        <div style="width: 80%;" class="progress-bar bg-danger"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <h2>نمونه کارها</h2>
+                        </div>
+                        <div class="body">
+                            <table class="table card-table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="font-weight-bold">Apple</td>
+                                        <td class="text-right">984.52 <span class="text-success">(0.25%) <i class="fa fa-caret-up"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">Google</td>
+                                        <td class="text-right">956.3 <span class="text-danger">(-0.15%) <i class="fa fa-caret-down"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">DMKT</td>
+                                        <td class="text-right">89.74 <span class="text-success">(0.85%) <i class="fa fa-caret-up"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">TMLS</td>
+                                        <td class="text-right">210.04 <span class="text-success">(0.65%) <i class="fa fa-caret-up"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">YOUS</td>
+                                        <td class="text-right">218.47 <span class="text-danger">(-0.42%) <i class="fa fa-caret-down"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold">TCS</td>
+                                        <td class="text-right">48.75 <span class="text-danger">(-0.63%) <i class="fa fa-caret-down"></i></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="body">
+                            <div class="card-value float-right text-warning">27%</div>
+                            <h3 class="mb-1">2,510</h3>
+                            <div>Total Leads</div>
+                            <div class="mt-4">
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar bg-warning" style="width: 27%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="body">
+                            <div class="card-value float-right text-danger">0%</div>
+                            <h3 class="mb-1">$5,853</h3>
+                            <div>Total Payment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Javascript -->
+<script src="assets/bundles/libscripts.bundle.js"></script>    
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+<script src="assets/bundles/chartist.bundle.js"></script>
+<script src="assets/bundles/knob.bundle.js"></script><!-- Jquery Knob-->
+<script src="assets/bundles/c3.bundle.js"></script>
+
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="assets/js/pages/widgets.js"></script>
+</body>
+
+
+<!-- Mirrored from paradigm-shift.ir/Brego/brego/dark/widgets.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jul 2019 07:41:54 GMT -->
+</html>
