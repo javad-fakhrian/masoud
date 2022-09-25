@@ -59,53 +59,34 @@
                     <div id="hid-men">
                         <ul class="menu">
                             <li>
-                                <a href="#">خانه</a>
-                                <!-- level 2-->
-                                <ul>
-                                    <li><a href="index.html">اسلایدر</a></li>
-                                    <li><a href="index2.html">تصویر متحرک</a></li>
-                                    <li><a href="index3.html">تصویر</a></li>
-                                    <li><a href="index4.html">نمایش اسلاید</a></li>
-                                    <li><a href="index5.html">اسلاید</a></li>
-                                    <li><a href="index6.html">ویدئو</a></li>
-                                </ul>
-                                <!-- level 2 end-->
+                                <a href="{{route('main')}}">خانه</a>
                             </li>
-                            <li>
-                                <a href="#">نمونه کارها</a>
-                                <!-- level 2-->
-                                <ul>
-                                    <li><a href="portfolio.html">استایل 1</a></li>
-                                    <li><a href="portfolio2.html">استایل 2</a></li>
-                                    <li><a href="portfolio3.html">استایل 3</a></li>
-                                    <li><a href="portfolio4.html">استایل 4</a></li>
+                            @auth
+                                @if(auth()->user()->is_admin == 1)
                                     <li>
-                                        <a href="#">نمونه کارهای تکی</a>
-                                        <!-- level 3-->
-                                        <ul>
-                                            <li><a href="portfolio-single.html">استایل 1</a></li>
-                                            <li><a href="portfolio-single2.html">استایل 2</a></li>
-                                            <li><a href="portfolio-single3.html">استایل 3</a></li>
-                                            <li><a href="portfolio-single4.html">استایل 4</a></li>
-                                            <li><a href="portfolio-single5.html">استایل 5</a></li>
-                                        </ul>
-                                        <!-- level 3 end-->
+                                        <a href="{{route('admin.index')}}">ورود به پنل مدیریت</a> 
                                     </li>
-                                </ul>
-                                <!-- level 2 end-->
-                            </li>
-                            <li><a href="contact.html">تماس</a></li>
-                            <li><a href="blog.html">وبلاگ</a></li>
+                                @endif
+                            @endauth
+
+                            @guest
+                                <li>
+                                    <a href="{{route('login')}}">ورود</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('register')}}">ثبت نام</a>
+                                </li>
+                            @endguest
                             <li>
-                                <a href="#">صفحات</a>
-                                <!-- level 2-->
-                                <ul>
-                                    <li><a href="blog-single.html">وبلاگ تکی</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="contact2.html">راه ارتباطی 2</a></li>
-                                </ul>
-                                <!-- level 2 end-->
+                                <a href="{{route('work.sample')}}">نمونه کارها</a>
                             </li>
+                            <li><a href="{{route('contactus')}}">تماس با ما</a></li>
+                            @auth
+                                <li><a href="{{ route('logout') }}" class="icon-menu"  onclick="event.preventDefault();document.getElementById('logout-form').submit();" title="خروج">خروج</a></li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            @endauth
                         </ul>
                     </div>
                 </div>
@@ -513,7 +494,7 @@
                                     <h4>آماده سفارش پروژه خود هستید؟</h4>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="contact.html" class="ord-link">ارتباط برقرار کنید</a>
+                                    <a href="{{route('contactus')}}" class="ord-link">ارتباط برقرار کنید</a>
                                 </div>
                             </div>
                         </div>
@@ -731,7 +712,7 @@
         <!-- arrow nav end-->
         <!-- footer-->
         <footer class="main-footer">
-            <a href="contact.html" class="mail-link"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="{{route('contactus')}}" class="mail-link"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             <!-- header-social-->
             <div class="footer-social">
                 <ul>
