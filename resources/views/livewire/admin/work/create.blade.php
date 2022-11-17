@@ -14,7 +14,7 @@
     </div>
     <div class="body">
         <form id="basic-form" wire:submit.prevent="CreateWork" enctype="multipart/form-data" role="form">
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-12">
                         <label>نوع نمونه کار</label>
@@ -30,7 +30,7 @@
                         <p id="error-radio"></p>
                     </div>
                 </div>                                    
-            </div>
+            </div> --}}
 
             <div class="form-group">
                 <div class="mt-4" x-data="{ isUploading: false, progress: 0 }" 

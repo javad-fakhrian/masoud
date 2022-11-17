@@ -154,7 +154,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary btn-round btn-block">ورود</button>
                         <div class="bottom">
-                            <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a href="{{ route('password.request') }}">رمز عبور را فراموش کرده اید؟</a></span>
+                            {{-- <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a href="{{ route('password.request') }}">رمز عبور را فراموش کرده اید؟</a></span> --}}
                             <span>حساب کاربری ندارید؟ <a href="{{ route('register') }}">ثبت نام</a></span>
                         </div>
                     </form>
